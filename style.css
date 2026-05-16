@@ -1,0 +1,222 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow-x:hidden;
+padding:20px;
+}
+
+/* PAGE */
+.page{
+width:100%;
+max-width:400px;
+background:#1e293b;
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,0,0,0.5);
+position:relative;
+animation:apparition 0.5s ease;
+}
+
+/* PAGE CACHE */
+.cache{
+display:none;
+}
+
+/* TITRE */
+.titre{
+font-size:35px;
+font-weight:bold;
+color:orange;
+text-shadow:0 0 15px orange;
+margin-bottom:20px;
+}
+
+/* TEXTE */
+p{
+margin-top:10px;
+font-size:17px;
+}
+
+/* INPUT */
+input{
+width:100%;
+padding:15px;
+margin-top:20px;
+border:none;
+border-radius:15px;
+font-size:16px;
+outline:none;
+}
+
+/* BOUTON GENERAL */
+button{
+cursor:pointer;
+border:none;
+transition:0.2s;
+}
+
+/* BOUTON HILALAO */
+.btnJouer{
+margin-top:25px;
+padding:15px 25px;
+background:linear-gradient(145deg,#ff9900,#ffcc00);
+border-radius:18px;
+font-size:20px;
+font-weight:bold;
+color:white;
+box-shadow:
+0 8px 0 #cc7a00,
+0 0 20px orange;
+}
+
+/* BOUTON CONTINUER */
+.btnContinuer{
+margin-top:25px;
+padding:15px 25px;
+background:linear-gradient(145deg,#ffaa00,#ff7700);
+border-radius:18px;
+font-size:18px;
+font-weight:bold;
+color:white;
+box-shadow:
+0 8px 0 #cc6600,
+0 0 20px orange;
+}
+
+/* EFFET CLICK */
+.btnJouer:active,
+.btnContinuer:active,
+.btn3d:active,
+.cage:active{
+transform:translateY(8px);
+box-shadow:none;
+}
+
+/* ZONE CHOIX */
+.zoneChoix{
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-top:30px;
+}
+
+/* CAGE */
+.CREDIT{
+padding:25px;
+border-radius:20px;
+font-size:28px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+transition:0.2s;
+box-shadow:0 8px 0 rgba(0,0,0,0.3);
+}
+
+/* CAGE 1 */
+#credit1{
+background:linear-gradient(145deg,#ff0000,#ff4d4d);
+box-shadow:
+0 8px 0 #990000,
+0 0 20px red;
+}
+
+/* CAGE 2 */
+#credit2{
+background:linear-gradient(145deg,#0066ff,#3399ff);
+box-shadow:
+0 8px 0 #003399,
+0 0 20px blue;
+}
+
+/* CAGE 3 */
+#credit3{
+background:linear-gradient(145deg,#00aa00,#33cc33);
+box-shadow:
+0 8px 0 #006600,
+0 0 20px lime;
+}
+
+/* HOVER */
+.cage:hover,
+.btnJouer:hover,
+.btnContinuer:hover,
+.btn3d:hover{
+transform:scale(1.03);
+}
+
+/* RESULTAT */
+#resultat{
+margin-top:30px;
+font-size:26px;
+font-weight:bold;
+color:yellow;
+text-shadow:0 0 15px yellow;
+}
+
+/* ZONE BOUTONS */
+.zoneBoutons{
+position:fixed;
+bottom:20px;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+gap:10px;
+padding:0 15px;
+z-index:1000;
+
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+}
+
+/* BTN 3D */
+.btn3d{
+flex:1;
+padding:15px;
+border-radius:15px;
+font-size:18px;
+font-weight:bold;
+background:linear-gradient(145deg,#00ccff,#0066ff);
+color:white;
+box-shadow:
+0 8px 0 #003399,
+0 0 15px #00ccff;
+}
+
+/* TABLE */
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+background:white;
+color:black;
+border-radius:15px;
+overflow:hidden;
+}
+
+th{
+background:orange;
+color:white;
+padding:15px;
+}
+
+td{
+padding:12px;
+border:1px solid #ddd;
+text-align:center;
+}
